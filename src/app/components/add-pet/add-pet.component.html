@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()">
+  <mat-form-field class="add-margin" appearance="fill">
+    <mat-label>Breed</mat-label>
+    <input matInput placeholder="shiba inu" name="breed" [(ngModel)]="breed" />
+  </mat-form-field>
+
+  {{ breed }}
+
+  <mat-form-field class="add-margin" appearance="fill">
+    <mat-label>Image url</mat-label>
+    <input matInput placeholder="shiba inu" name="url" [(ngModel)]="url" />
+  </mat-form-field>
+  {{ url }}
+
+  <mat-form-field class="add-margin" appearance="fill">
+    <mat-label>Description</mat-label>
+    <input matInput placeholder="shiba inu" name="description" [(ngModel)]="description" />
+  </mat-form-field>
+  {{ description }}
+
+  <button mat-raised-button color="primary">Add</button>
+</form>
